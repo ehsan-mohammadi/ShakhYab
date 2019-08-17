@@ -62,9 +62,7 @@
     <Content Include="fonts\SegoeUI.svg" />
     <Content Include="images\image-github.svg" />
     <Content Include="images\image-info.svg" />
-    <Content Include="images\ImageBug.svg" />
-    <Content Include="images\ImageGithub.svg" />
-    <Content Include="images\ImageInformation.svg" />
+    <Content Include="images\image-bug.svg" />
     <Content Include="images\ShakhYab-logo.png" />
     <Content Include="index.aspx" />
     <Content Include="master\WebMaster.Master" />
