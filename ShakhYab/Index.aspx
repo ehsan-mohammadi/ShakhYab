@@ -4,11 +4,11 @@
         <div class="title-logo">
             <div class="title-logo-image"></div>
             <div style="margin-top: 20px;">
-                <a class="button-circle-black ripple">
+                <a class="button-circle-black ripple" href="https://github.com/ehsan-mohammadi/ShakhYab" target="_blank">
                     <img width="30" height="30" src="/images/image-github.svg" style="vertical-align: top; margin-top:8px;"/>
-                    <span class="tooltip">Shakh-Yab on GitHub</span>
+                    <span class="tooltip">Shakh Yab on GitHub</span>
                 </a>
-                <a class="button-circle-black ripple">
+                <a class="button-circle-black ripple" href="https://github.com/ehsan-mohammadi/ShakhYab/issues" target="_blank">
                     <img width="30" height="30" src="/images/image-bug.svg" style="vertical-align: top; margin-top:8px;"/>
                     <span class="tooltip">Bug reporting</span>
                 </a>
@@ -27,6 +27,26 @@
                 While tracking non-followers, Shakh Yab also lets you unfollow these users.
                 <br />So, if you are asking yourself "Who unfollowed me on Instagram?", just start using Shakh Yab to find out who unfollowed you.
             </h2>
+        </div>
+        <div class="container" style="margin: 50px auto 50px auto;">
+            <h1 class="title" style="text-align: center; margin-bottom: 20px;">Try Shakh Yab!</h1>
+            <p class="normal-text" style="margin-bottom: 10px;">Instagram Username:</p>
+            <asp:TextBox ID="textBoxUsername" CssClass="text-box" runat="server"></asp:TextBox>
+            <p class="normal-text" style="margin-bottom: 10px;">Password:</p>
+            <asp:TextBox ID="textBoxPassword" CssClass="text-box" TextMode="Password" runat="server"></asp:TextBox>
+            <div style="display: flex; margin: 0px 40px;">
+                <img width="25" height="25" src="/images/image-hint.svg"/>
+                <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">We never save your information!</p>
+                <p style="flex: 1;"></p>
+            </div>
+            <div style="display: flex; margin: 0px 40px;">
+                <img width="25" height="25" src="/images/image-hint.svg"/>
+                <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">Don't trust me? <span class="hyper-link">Click here</span></p>
+                <p style="flex: 1;"></p>
+            </div>
+            <p class="normal-text" style="margin-bottom: 30px;"></p>
+            <asp:Button ID="buttonLogin" CssClass="button-login" runat="server" Text="Login" />
+            <p class="normal-text" style="margin-bottom: 30px;"></p>
         </div>
     </div>
 </asp:Content>
