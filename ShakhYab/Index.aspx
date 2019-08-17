@@ -28,7 +28,7 @@
                 <br />So, if you are asking yourself "Who unfollowed me on Instagram?", just start using Shakh Yab to find out who unfollowed you.
             </h2>
         </div>
-        <div class="container" style="margin: 50px auto 50px auto;">
+        <div class="container" style="margin-top: 50px;">
             <h1 class="title" style="text-align: center; margin-bottom: 20px;">Try Shakh Yab!</h1>
             <p class="normal-text" style="margin-bottom: 10px;">Instagram Username:</p>
             <asp:TextBox ID="textBoxUsername" CssClass="text-box" runat="server"></asp:TextBox>
@@ -41,7 +41,7 @@
             </div>
             <div style="display: flex; margin: 0px 40px;">
                 <img width="25" height="25" src="/images/image-hint.svg"/>
-                <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">Don't trust me? <span class="hyper-link">Click here</span></p>
+                <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">Don't trust me? <a class="hyper-link">Click here</a></p>
                 <p style="flex: 1;"></p>
             </div>
             <p class="normal-text" style="margin-bottom: 30px;"></p>
