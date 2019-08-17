@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master/WebMaster.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="ShakhYab.Index" %>
+﻿<%@ Page Async="true" Title="" Language="C#" MasterPageFile="~/master/WebMaster.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="ShakhYab.Index" %>
 <asp:Content ID="mainContent" ContentPlaceHolderID="main" runat="server">
     <div class="title-side-by-side">
         <div class="title-logo">
