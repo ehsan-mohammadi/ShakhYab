@@ -57,6 +57,24 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\SegoeUI-Bold.svg" />
+    <Content Include="fonts\SegoeUI-Light.svg" />
+    <Content Include="fonts\SegoeUI.svg" />
+    <Content Include="images\ShakhYab-logo.png" />
+    <Content Include="index.aspx" />
+    <Content Include="master\WebMaster.Master" />
+    <Content Include="fonts\SegoeUI-Bold.eot" />
+    <Content Include="fonts\SegoeUI-Bold.ttf" />
+    <Content Include="fonts\SegoeUI-Bold.woff" />
+    <Content Include="fonts\SegoeUI-Bold.woff2" />
+    <Content Include="fonts\SegoeUI-Light.eot" />
+    <Content Include="fonts\SegoeUI-Light.ttf" />
+    <Content Include="fonts\SegoeUI-Light.woff" />
+    <Content Include="fonts\SegoeUI-Light.woff2" />
+    <Content Include="fonts\SegoeUI.eot" />
+    <Content Include="fonts\SegoeUI.ttf" />
+    <Content Include="fonts\SegoeUI.woff" />
+    <Content Include="fonts\SegoeUI.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,11 +83,27 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="styles\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\WebMaster.Master.cs">
+      <DependentUpon>WebMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\WebMaster.Master.designer.cs">
+      <DependentUpon>WebMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
