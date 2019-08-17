@@ -22,15 +22,6 @@ namespace ShakhYab.master {
         protected global::System.Web.UI.HtmlControls.HtmlForm masterForm;
         
         /// <summary>
-        /// leftside control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder leftside;
-        
-        /// <summary>
         /// main control.
         /// </summary>
         /// <remarks>
@@ -38,5 +29,14 @@ namespace ShakhYab.master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder main;
+        
+        /// <summary>
+        /// header control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder header;
     }
 }
