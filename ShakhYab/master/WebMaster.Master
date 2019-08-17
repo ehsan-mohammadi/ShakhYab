@@ -19,12 +19,15 @@
                     <div style="margin-top: 20px;">
                         <a class="button-circle-black ripple">
                             <img width="30" height="30" src="/images/image-github.svg" style="vertical-align: top; margin-top:8px;"/>
+                            <span class="tooltip">Shakh-Yab on GitHub</span>
                         </a>
                         <a class="button-circle-black ripple">
-                            <img width="30" height="30" src="/images/ImageBug.svg" style="vertical-align: top; margin-top:8px;"/>
+                            <img width="30" height="30" src="/images/image-bug.svg" style="vertical-align: top; margin-top:8px;"/>
+                            <span class="tooltip">Bug reporting</span>
                         </a>
                         <a class="button-circle-black ripple">
                             <img width="28" height="28" src="/images/image-info.svg" style="vertical-align: top; margin-top:9px;"/>
+                            <span class="tooltip">About</span>
                         </a>
                     </div>
                 </div>
