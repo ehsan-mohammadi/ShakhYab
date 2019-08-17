@@ -213,7 +213,7 @@ p.normal-text {
     margin-bottom: 15px;
 }
 
-.button-login {
+.button-start {
     margin: 5px;
     width: calc(100% - 80px);
     height: 35px;
@@ -227,16 +227,17 @@ p.normal-text {
     text-decoration: none;
     outline: none;
     cursor: pointer;
-    padding: 1px 0px 1px 25px;
+    padding: 1px 0px 1px 23px;
     background-repeat: no-repeat;
     background-position: calc(50% - 30px) center;
-    background-image: url(../images/image-login.svg);
+    background-image: url(../images/image-start.svg);
+    background-size: 25px;
     -webkit-transition: background .4s;
     -moz-transition: background .4s;
     transition: background .4s;
 }
 
-.button-login:hover {
+.button-start:hover {
     background-color: #333;
 }
 

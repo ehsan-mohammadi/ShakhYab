@@ -45,7 +45,12 @@
                 <p style="flex: 1;"></p>
             </div>
             <p class="normal-text" style="margin-bottom: 30px;"></p>
-            <asp:Button ID="buttonLogin" CssClass="button-login" runat="server" Text="Login" />
+            <asp:Button ID="buttonStart" CssClass="button-start" runat="server" Text="START!" />
+            <div style="margin: 0px 40px; display: none;">
+                <span class="loader">
+                  <span class="loader-inner"></span>
+                </span>
+            </div>
             <p class="normal-text" style="margin-bottom: 30px;"></p>
         </div>
     </div>
