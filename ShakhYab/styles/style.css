@@ -80,8 +80,9 @@ div.title-logo {
     background-size: cover;
     width: 250px;
     height: 353px;
-    margin: auto;
+    margin: 50px auto auto auto;
     display: inline-block;
+    vertical-align: top;
 }
 
 div.title-description {
