@@ -74,13 +74,7 @@ div.title-side-by-side {
 }
 
 div.title-logo {
-    background-image: url(../images/ShakhYab-logo.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 250px;
-    height: 353px;
-    margin: 50px auto auto auto;
     display: inline-block;
     vertical-align: top;
 }
@@ -88,6 +82,16 @@ div.title-logo {
 div.title-description {
     width: 450px;
     display: inline-block;
+}
+
+div.title-logo-image {
+    background-image: url(../images/ShakhYab-logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 353px;
+    margin: 50px auto auto auto;
 }
 
 h1.title {
@@ -108,4 +112,35 @@ h2.sub-title {
     text-align: justify;
     padding: 0px 40px 0px 40px;
     margin: 0;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: #eee radial-gradient(circle, transparent 1%, #eee 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: #ccc;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+a.button-circle-black {
+    display: inline-block;
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 100px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
 }
