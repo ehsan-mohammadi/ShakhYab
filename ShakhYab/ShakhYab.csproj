@@ -108,6 +108,7 @@
       <DependentUpon>WebMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShakhYabCore.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
