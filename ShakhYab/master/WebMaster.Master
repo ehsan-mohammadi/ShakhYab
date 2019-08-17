@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Shakh Yab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../styles/style.css" rel="stylesheet" />
 </head>
 <body>
@@ -12,7 +14,20 @@
         <div>
             <div class="header"></div>
             <div class="title-side-by-side">
-                <div class="title-logo"></div>
+                <div class="title-logo">
+                    <div class="title-logo-image"></div>
+                    <div style="margin-top: 20px;">
+                        <a class="button-circle-black ripple">
+                            <img width="30" height="30" src="/images/image-github.svg" style="vertical-align: top; margin-top:8px;"/>
+                        </a>
+                        <a class="button-circle-black ripple">
+                            <img width="30" height="30" src="/images/ImageBug.svg" style="vertical-align: top; margin-top:8px;"/>
+                        </a>
+                        <a class="button-circle-black ripple">
+                            <img width="28" height="28" src="/images/image-info.svg" style="vertical-align: top; margin-top:9px;"/>
+                        </a>
+                    </div>
+                </div>
                 <div class="title-description">
                     <h1 class="title">What is Shakh Yab?</h1>
                     <h2 class="sub-title">Sometimes, you may follow someone on Instagram, but he doesn't follow you back. Or might he follow you back and after that, he unfollow you.
