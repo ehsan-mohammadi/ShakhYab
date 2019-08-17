@@ -28,30 +28,33 @@
                 <br />So, if you are asking yourself "Who unfollowed me on Instagram?", just start using Shakh Yab to find out who unfollowed you.
             </h2>
         </div>
-        <div class="container" style="margin-top: 50px;">
-            <h1 class="title" style="text-align: center; margin-bottom: 20px;">Try Shakh Yab!</h1>
-            <p class="normal-text" style="margin-bottom: 10px;">Instagram Username:</p>
-            <asp:TextBox ID="textBoxUsername" CssClass="text-box" runat="server"></asp:TextBox>
-            <p class="normal-text" style="margin-bottom: 10px;">Password:</p>
-            <asp:TextBox ID="textBoxPassword" CssClass="text-box" TextMode="Password" runat="server"></asp:TextBox>
-            <div style="display: flex; margin: 0px 40px;">
-                <img width="25" height="25" src="/images/image-hint.svg"/>
-                <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">We never save your information!</p>
-                <p style="flex: 1;"></p>
-            </div>
-            <div style="display: flex; margin: 0px 40px;">
-                <img width="25" height="25" src="/images/image-hint.svg"/>
-                <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">Don't trust me? <a class="hyper-link">Click here</a></p>
-                <p style="flex: 1;"></p>
-            </div>
-            <p class="normal-text" style="margin-bottom: 30px;"></p>
-            <asp:Button ID="buttonStart" CssClass="button-start" runat="server" Text="START!" />
-            <div style="margin: 0px 40px; display: none;">
-                <span class="loader">
-                  <span class="loader-inner"></span>
-                </span>
-            </div>
-            <p class="normal-text" style="margin-bottom: 30px;"></p>
-        </div>
+        <asp:ScriptManager ID="scriptManager" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="updatePanelIndex" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                 <div class="container" style="margin-top: 50px;">
+                    <h1 class="title" style="text-align: center; margin-bottom: 20px;">Try Shakh Yab!</h1>
+                    <p class="normal-text" style="margin-bottom: 10px;">Instagram Username:</p>
+                    <asp:TextBox ID="textBoxUsername" CssClass="text-box" runat="server"></asp:TextBox>
+                    <p class="normal-text" style="margin-bottom: 10px;">Password:</p>
+                    <asp:TextBox ID="textBoxPassword" CssClass="text-box" TextMode="Password" runat="server"></asp:TextBox>
+                    <div style="display: flex; margin: 0px 40px;">
+                        <img width="25" height="25" src="/images/image-hint.svg"/>
+                        <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">We never save your information!</p>
+                        <p style="flex: 1;"></p>
+                    </div>
+                    <div style="display: flex; margin: 0px 40px;">
+                        <img width="25" height="25" src="/images/image-hint.svg"/>
+                        <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">Don't trust me? <a class="hyper-link">Click here</a></p>
+                        <p style="flex: 1;"></p>
+                    </div>
+                    <p id="errorMessage" class="normal-text" style="margin: 15px 0px; text-align:center; color:red;" runat="server"></p>
+                    <asp:Button ID="buttonStart" CssClass="button-start" runat="server" Text="START!" OnClick="buttonStart_Click"/>
+                    <div id="divLoading" style="margin: 0px 40px; display: none;" runat="server">
+                        <div class="lds-ripple"><div></div><div></div></div>
+                    </div>
+                    <p class="normal-text" style="margin-bottom: 30px;"></p>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
     </div>
 </asp:Content>

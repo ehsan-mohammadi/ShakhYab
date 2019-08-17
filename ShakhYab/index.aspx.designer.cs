@@ -13,6 +13,24 @@ namespace ShakhYab {
     public partial class Index {
         
         /// <summary>
+        /// scriptManager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager scriptManager;
+        
+        /// <summary>
+        /// updatePanelIndex control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanelIndex;
+        
+        /// <summary>
         /// textBoxUsername control.
         /// </summary>
         /// <remarks>
@@ -31,6 +49,15 @@ namespace ShakhYab {
         protected global::System.Web.UI.WebControls.TextBox textBoxPassword;
         
         /// <summary>
+        /// errorMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errorMessage;
+        
+        /// <summary>
         /// buttonStart control.
         /// </summary>
         /// <remarks>
@@ -38,5 +65,14 @@ namespace ShakhYab {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button buttonStart;
+        
+        /// <summary>
+        /// divLoading control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divLoading;
     }
 }
