@@ -199,12 +199,6 @@ p.normal-text {
     margin: 0;
 }
 
-div.splitter {
-    width: calc(100% - 200px);
-    margin: 50px auto auto auto;
-    border-bottom: 1px solid #e6e6e6;
-}
-
 .text-box {
     width: calc(100% - 90px);
     outline: 0;
@@ -246,11 +240,33 @@ div.splitter {
     background-color: #333;
 }
 
-span.hyper-link {
+a.hyper-link {
+    font-family: 'SegoeUI';
+    font-size: 11pt;
+    font-weight: normal;
     color: #000;
+    text-align: left;
+    margin: 0;
 }
 
-span.hyper-link:hover {
+a.hyper-link:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+div.splitter {
+    width: calc(100% - 200px);
+    margin: 50px auto auto auto;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+div.footer {
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+div.footer-inner {
+    display: inline-block;
+    margin: 25px 0px 0px 0px;
 }

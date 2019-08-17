@@ -18,6 +18,20 @@
             <asp:ContentPlaceHolder ID="header" runat="server">
                 <div class="header"></div>
             </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="footer" runat="server">
+                <div class="splitter"></div>
+                <div class="footer">
+                    <div class="footer-inner" style="width: 400px; display: inline-block;">
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">ABOUT ME</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">README</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">PRIVACY</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">BUG REPORTING</a>
+                    </div>
+                    <div class="footer-inner" style="width: 200px;">
+                        <p class="normal-text" style="color: #7a7a7a;">© 2019 Shakh Yab</p>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>
