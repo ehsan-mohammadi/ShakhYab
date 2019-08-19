@@ -66,25 +66,29 @@ namespace ShakhYab
         /// <param name="shakhs">The shakhs list</param>
         private void SetShakhs(List<UserInfo> shakhs)
         {
-            divShakhListContainer.InnerHtml = "";
-
-            for (int i = 0; i < shakhs.Count; i++)
+            if(shakhs.Count != 0)
             {
-                // Set paragraphs and div
-                string pShakhHeader = String.Format("<p class=\"normal-text\" style=\"text-align: center; font-size: 14pt; color: red; margin: 15px 0px; padding: 0px 15px;\">Shakh user #{0}</p>", i + 1);
-                string divShakhProfileImage = String.Format("<div class=\"shakh-profile-image\" style=\"background-image: url({0})\"></div>", shakhs[i].ProfileUrl);
-                string pShakhUsername = String.Format("<p class=\"normal-text\" style=\"text-align: center; font-size: 13pt; margin: 0px; padding: 0px 15px;\">{0}</p>", shakhs[i].Username);
-                string pShakhNickname = String.Format("<p class=\"normal-text\" style=\"text-align: center; font-size: 12pt; color: #7a7a7a; margin: 0px 0px 20px 0px; padding: 0px 15px;\">{0}</p>", shakhs[i].Nickname);
-                
-                // Add them to container
-                string divShakhContainer = String.Format("<div class=\"shakh-each-container\">{0}{1}{2}{3}</div>", pShakhHeader, divShakhProfileImage, pShakhUsername, pShakhNickname);
+                // Clear divShakhListContainer
+                divShakhListContainer.InnerHtml = "";
 
-                // Add container between divShakhListContainer innerHtml
-                divShakhListContainer.InnerHtml += divShakhContainer;
+                for (int i = 0; i < shakhs.Count; i++)
+                {
+                    // Set paragraphs and div
+                    string pShakhHeader = String.Format("<p class=\"normal-text\" style=\"text-align: center; font-size: 14pt; color: red; margin: 15px 0px; padding: 0px 15px;\">Shakh user #{0}</p>", i + 1);
+                    string divShakhProfileImage = String.Format("<div class=\"shakh-profile-image\" style=\"background-image: url({0})\"></div>", shakhs[i].ProfileUrl);
+                    string pShakhUsername = String.Format("<p class=\"normal-text\" style=\"text-align: center; font-size: 13pt; margin: 0px; padding: 0px 15px;\">{0}</p>", shakhs[i].Username);
+                    string pShakhNickname = String.Format("<p class=\"normal-text\" style=\"text-align: center; font-size: 12pt; color: #7a7a7a; margin: 0px 0px 20px 0px; padding: 0px 15px;\">{0}</p>", shakhs[i].Nickname);
+
+                    // Add them to container
+                    string divShakhContainer = String.Format("<div class=\"shakh-each-container\">{0}{1}{2}{3}</div>", pShakhHeader, divShakhProfileImage, pShakhUsername, pShakhNickname);
+
+                    // Add container between divShakhListContainer innerHtml
+                    divShakhListContainer.InnerHtml += divShakhContainer;
+                }
+
+                // Set the last margin
+                divShakhListContainer.InnerHtml += "<p style=\"margin: 0px 0px 5px 0px;\"></p>";
             }
-
-            // Set the last margin
-            divShakhListContainer.InnerHtml += "<p style=\"margin: 0px 0px 5px 0px;\"></p>";
         }
     }
 }
