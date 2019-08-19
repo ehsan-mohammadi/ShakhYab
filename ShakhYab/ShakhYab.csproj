@@ -74,7 +74,9 @@
     <Content Include="images\image-github.svg" />
     <Content Include="images\image-hint.svg" />
     <Content Include="images\image-info.svg" />
-    <Content Include="images\image-bug.svg" />
+    <Content Include="images\image-bug.svg">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="images\image-start.svg" />
     <Content Include="images\ShakhYab-logo.png" />
     <Content Include="index.aspx" />
