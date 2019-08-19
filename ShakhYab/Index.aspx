@@ -25,14 +25,13 @@
                 <br />In Iran, we call these people "شاخ" (Say: Shakh)!
                 <br />Absolutely, it's hard and boring to looking for these people by comparing follower and following list.
                 <br /><span style="font-family:'SegoeUI-bold'; font-weight:bold">Shakh Yab</span> is a simple, free and open-source Instagram manager tool that find out users who don't follow you back on Instagram. With Shakh Yab you can easily find a list of all users who do not follow your account on Instagram but whom you follow.
-                While tracking non-followers, Shakh Yab also lets you unfollow these users.
                 <br />So, if you are asking yourself "Who unfollowed me on Instagram?", just start using Shakh Yab to find out who unfollowed you.
             </h2>
         </div>
         <asp:ScriptManager ID="scriptManager" runat="server"></asp:ScriptManager>
         <asp:UpdatePanel ID="updatePanelIndex" runat="server" UpdateMode="Conditional">
             <ContentTemplate>
-                 <div class="container" style="margin-top: 50px;">
+                 <div id="divLogin" class="container" style="margin-top: 50px;" runat="server">
                     <h1 class="title" style="text-align: center; margin-bottom: 20px;">Try Shakh Yab!</h1>
                     <p class="normal-text" style="margin-bottom: 10px;">Instagram Username:</p>
                     <asp:TextBox ID="textBoxUsername" CssClass="text-box" runat="server"></asp:TextBox>
@@ -54,6 +53,11 @@
                         <div class="lds-ripple"><div></div><div></div></div>
                     </div>
                     <p class="normal-text" style="margin-bottom: 30px;"></p>
+                </div>
+                <div id="divUser" class="container" style="width: 800px; margin-top: 50px; display: none;" runat="server">
+                    <div id="divProfileImage" class="login-profile-image" runat="server"></div>
+                    <p id="textWelcome" class="normal-title" style="text-align: center; margin-bottom: 0px; font-family:'SegoeUI-Light'; font-weight:lighter;" runat="server">Welcome User!</p>
+                    <p id="textUsername" class="normal-title" style="text-align: center; font-size: 17pt; color: #7a7a7a; margin-bottom: 20px;" runat="server">@username</p>
                 </div>
             </ContentTemplate>
         </asp:UpdatePanel>

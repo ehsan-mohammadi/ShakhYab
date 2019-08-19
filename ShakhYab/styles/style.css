@@ -271,3 +271,25 @@ div.footer-inner {
     display: inline-block;
     margin: 25px 0px 0px 0px;
 }
+
+div.login-profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 40px auto 0px auto;
+    background-image: url(https://avatars3.githubusercontent.com/u/22881814?s=400&u=89bdda378fc5806a150fcb0d5d6cffaad7b91d33&v=4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    border: solid 1px #e6e6e6;
+}
+
+p.normal-title {
+    font-family: 'SegoeUI-Light';
+    font-size: 22pt;
+    font-weight: lighter;
+    color: black;
+    text-align: left;
+    padding: 0px 40px 0px 40px;
+    margin: 0;
+}
