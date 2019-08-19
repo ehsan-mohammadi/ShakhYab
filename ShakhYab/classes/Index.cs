@@ -11,8 +11,6 @@ namespace ShakhYab
 
     public partial class Index : System.Web.UI.Page
     {
-        ShakhYabCore shakhYabCore;
-
         /// <summary>
         /// Login async to the user Instagram account and send the result to the buttonStart_Click
         /// </summary>
@@ -21,6 +19,7 @@ namespace ShakhYab
         protected async Task Login(string username, string password)
         {
             // Login to the Instagram account
+            ShakhYabCore shakhYabCore;
             shakhYabCore = new ShakhYabCore(username, password);
             string state = await shakhYabCore.Login();
             
@@ -38,14 +37,21 @@ namespace ShakhYab
                 divLogin.Style.Add("display", "none");
                 divUser.Style.Add("display", "block");
 
-                // Get logged in user information
+                // Get logged in user information and set them
                 UserInfo loggedInUserInfo = shakhYabCore.GetLoggedInUserProfile();
-
-                // Set logged in user information
-                textWelcome.InnerText = String.Format("Welcome {0}!", loggedInUserInfo.Nickname);
-                textUsername.InnerText = loggedInUserInfo.Username;
-                divProfileImage.Style.Add("background-image", String.Format("url({0})", loggedInUserInfo.ProfileUrl));
+                SetUserProfile(loggedInUserInfo);
             }
+        }
+
+        /// <summary>
+        /// Set logged in user information
+        /// </summary>
+        /// <param name="loggedInUserInfo">The logged in user</param>
+        private void SetUserProfile(UserInfo loggedInUserInfo)
+        {
+            textWelcome.InnerText = String.Format("Welcome {0}!", loggedInUserInfo.Nickname);
+            textUsername.InnerText = loggedInUserInfo.Username;
+            divProfileImage.Style.Add("background-image", String.Format("url({0})", loggedInUserInfo.ProfileUrl));
         }
     }
 }
