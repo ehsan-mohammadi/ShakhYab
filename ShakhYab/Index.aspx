@@ -1,5 +1,6 @@
 ﻿<%@ Page Async="true" Title="" Language="C#" MasterPageFile="~/master/WebMaster.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="ShakhYab.Index" %>
 <asp:Content ID="mainContent" ContentPlaceHolderID="main" runat="server">
+    <script type="text/javascript" src="scripts/actions.js"></script>
     <div class="title-side-by-side">
         <div class="title-logo">
             <div class="title-logo-image"></div>
@@ -48,7 +49,7 @@
                         <p style="flex: 1;"></p>
                     </div>
                     <p id="errorMessage" class="normal-text" style="margin: 15px 0px; text-align:center; color:red;" runat="server"></p>
-                    <asp:Button ID="buttonStart" CssClass="button-start" runat="server" Text="START!" OnClick="buttonStart_Click"/>
+                    <asp:Button ID="buttonStart" CssClass="button-start" runat="server" Text="START!" OnClientClick="return buttonStart_Click()" OnClick="buttonStart_Click"/>
                     <div id="divLoading" style="margin: 0px 40px; display: none;" runat="server">
                         <div class="lds-ripple"><div></div><div></div></div>
                     </div>
