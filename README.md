@@ -1,10 +1,10 @@
-# Shakh Yab
+﻿# Shakh Yab
 
 > Shows users who don't follow you on Instagram but whom you follow!
 
 <img src="https://github.com/ehsan-mohammadi/ShakhYab/blob/master/ShakhYab/images/ShakhYab-logo.png" width="250"/>
 
-Sometimes, you may follow someone on Instagram, but he doesn't follow you back. Or might he follow you back and after that, he unfollow you. In Iran, we call these people "???" (Say: Shakh)!
+Sometimes, you may follow someone on Instagram, but he doesn't follow you back. Or might he follow you back and after that, he unfollow you. In Iran, we call these people "شاخ" (Say: Shakh)!
 
 Absolutely, it's hard and boring to looking for these people by comparing follower and following list.
 
