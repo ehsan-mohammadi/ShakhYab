@@ -60,7 +60,14 @@
                     <p id="textUsername" class="normal-title" style="text-align: center; font-size: 17pt; color: #7a7a7a; margin-bottom: 20px;" runat="server">username</p>
                     <div class="splitter" style="margin: 20px auto 15px auto"></div>
                     <p class="normal-text" style="text-align: center; font-size: 14pt; margin-bottom: 30px;">Here is the list of people who not follow you back! (SHAKHS)</p>
-                    <div id="divShakhListContainer" class="shakh-list-container" runat="server"></div>
+                    <div id="divShakhListContainer" class="shakh-list-container" runat="server">
+                        <div class="shakh-each-container" style="margin-bottom: 10px;">
+                            <p class="normal-text" style="text-align: center; font-size: 14pt; color: green; margin: 15px 0px; padding: 0px 15px;">Hooorrraaayyy!</p>
+                            <div class="shakh-profile-image" style="background-image: url(../images/image-congrats.gif)"></div>
+                            <p class="normal-text" style="text-align: center; font-size: 13pt; margin: 0px; padding: 0px 15px;">Congrats!</p>
+                            <p class="normal-text" style="text-align: center; font-size: 12pt; color: #7a7a7a; margin: 0px 0px 20px 0px; padding: 0px 15px;">No shakh found in your following list!</p>
+                        </div>
+                    </div>
                 </div>
             </ContentTemplate>
         </asp:UpdatePanel>

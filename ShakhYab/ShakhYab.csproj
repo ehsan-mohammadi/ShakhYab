@@ -71,6 +71,7 @@
     <Content Include="fonts\SegoeUI-Bold.svg" />
     <Content Include="fonts\SegoeUI-Light.svg" />
     <Content Include="fonts\SegoeUI.svg" />
+    <Content Include="images\image-congrats.gif" />
     <Content Include="images\image-github.svg" />
     <Content Include="images\image-hint.svg" />
     <Content Include="images\image-info.svg" />
