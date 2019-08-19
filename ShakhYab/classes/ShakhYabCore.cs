@@ -87,5 +87,48 @@ namespace ShakhYab
 
             return following;
         }
+
+        /// <summary>
+        /// Search in following list and search users who not follow you back
+        /// </summary>
+        /// <returns>The list of user who not follow-back (Shakhs)</returns>
+        public async Task<List<UserInfo>> GetShakhs()
+        {
+            // Initialize the shakhs list
+            List<UserInfo> shakhs = new List<UserInfo>();
+
+            // Get followers and following list
+            IResult<InstaUserShortList> followers = await GetFollowers();
+            IResult<InstaUserShortList> following = await GetFollowing();
+
+            // Search in following and followers list
+            for (int i = 0; i < following.Value.Count; i++)
+            {
+                bool isShakh = true;
+
+                for (int j = 0; j < followers.Value.Count; j++)
+                {
+                    // user isn't shakh
+                    if(following.Value[i].UserName == followers.Value[j].UserName)
+                    {
+                        isShakh = false;
+                        break;
+                    }
+                }
+
+                if(isShakh)
+                {
+                    string nickname = following.Value[i].FullName;
+                    string username = following.Value[i].UserName;
+                    string profileUrl = following.Value[i].ProfilePicture;
+
+                    // Add shakh information to shakhs list
+                    UserInfo shakhUser = new UserInfo(nickname, username, profileUrl);
+                    shakhs.Add(shakhUser);
+                }
+            }
+
+            return shakhs;
+        }
     }
 }
