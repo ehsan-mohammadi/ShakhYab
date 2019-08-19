@@ -293,3 +293,29 @@ p.normal-title {
     padding: 0px 40px 0px 40px;
     margin: 0;
 }
+
+div.shakh-list-container {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.shakh-each-container {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    width: 250px;
+    margin: 5px;
+    display: inline-block;
+}
+
+div.shakh-profile-image {
+    width: 100px;
+    height: 100px;
+    margin: auto auto 5px auto;
+    background-image: url(https://avatars3.githubusercontent.com/u/22881814?s=400&u=89bdda378fc5806a150fcb0d5d6cffaad7b91d33&v=4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    border: solid 1px #e6e6e6;
+}
