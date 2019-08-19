@@ -54,10 +54,12 @@
                     </div>
                     <p class="normal-text" style="margin-bottom: 30px;"></p>
                 </div>
-                <div id="divUser" class="container" style="width: 800px; margin-top: 50px; display: none;" runat="server">
+                <div id="divUser" class="container" style="width: 800px; margin-top: 50px; display: block;" runat="server">
                     <div id="divProfileImage" class="login-profile-image" runat="server"></div>
                     <p id="textWelcome" class="normal-title" style="text-align: center; margin-bottom: 0px; font-family:'SegoeUI-Light'; font-weight:lighter;" runat="server">Welcome User!</p>
                     <p id="textUsername" class="normal-title" style="text-align: center; font-size: 17pt; color: #7a7a7a; margin-bottom: 20px;" runat="server">@username</p>
+                    <div class="splitter" style="margin: 20px auto 15px auto"></div>
+                    <p class="normal-text" style="text-align: center; font-size: 14pt; margin-bottom: 30px;">Here is the list of people who not follow you back! (SHAKHS)</p>
                 </div>
             </ContentTemplate>
         </asp:UpdatePanel>
