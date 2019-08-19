@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace ShakhYab
 {
+    using classes;
+
     public class ShakhYabCore
     {
         private IInstaApi api;
@@ -53,6 +55,14 @@ namespace ShakhYab
             {
                 return String.Format("Error:{0}", loginRequest.Info.Message);
             }
+        }
+
+        /// <summary>
+        /// Get the logged in user profile information (nickname, username and profile image) and set them
+        /// </summary>
+        public UserInfo GetLoggedInUserProfile()
+        {
+            return new UserInfo(user.LoggedInUder.FullName, user.LoggedInUder.UserName, user.LoggedInUder.ProfilePicture);
         }
     }
 }
