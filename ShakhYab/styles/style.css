@@ -63,8 +63,38 @@ div.header {
     right: 0;
     top: 0;
     position: fixed;
+    display: flex;
     background-color: #ffffff;
     border-bottom: solid 1px #e6e6e6;
+}
+
+a.header-logo {
+    display: flex;
+    margin: 0px;
+}
+
+a.header-logo:hover {
+    cursor: pointer;
+}
+
+div.header-logo-image {
+    background-image: url(../images/logo-shakhyab.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 53px;
+    height: 55px;
+    margin: auto 0px;
+}
+
+div.header-logo-name-image {
+    background-image: url(../images/logo-shakhyab.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75px;
+    height: 28px;
+    margin: auto 0px;
 }
 
 div.title-side-by-side {
@@ -86,7 +116,7 @@ div.title-description {
 }
 
 div.title-logo-image {
-    background-image: url(../images/ShakhYab-logo.png);
+    background-image: url(../images/logo-shakhyab.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,6 +177,13 @@ a.button-circle-black {
     cursor: pointer;
 }
 
+
+a.button-circle-black:hover span {
+  bottom: 55px;
+  visibility: visible;
+  opacity: 1;
+}
+
 span.tooltip {
     background: rgba(0, 0, 0, 0.78);
     color: #fff;
@@ -174,12 +211,6 @@ span.tooltip:before {
   position: absolute;
   bottom: -5px;
   left: 40px;
-}
-
-a.button-circle-black:hover span {
-  bottom: 55px;
-  visibility: visible;
-  opacity: 1;
 }
 
 div.container {
@@ -241,6 +272,26 @@ p.normal-text {
     background-color: #333;
 }
 
+.button-white {
+    margin: auto 7px;
+    width: auto;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    color: black;
+    font-family: 'SegoeUI-bold';
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 1px 23px;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: background .4s;
+    -moz-transition: background .4s;
+    transition: background .4s;
+}
+
 a.hyper-link {
     font-family: 'SegoeUI';
     font-size: 11pt;
@@ -276,7 +327,6 @@ div.login-profile-image {
     width: 150px;
     height: 150px;
     margin: 40px auto 0px auto;
-    background-image: url(https://avatars3.githubusercontent.com/u/22881814?s=400&u=89bdda378fc5806a150fcb0d5d6cffaad7b91d33&v=4);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,10 +362,57 @@ div.shakh-profile-image {
     width: 100px;
     height: 100px;
     margin: auto auto 5px auto;
-    background-image: url(https://avatars3.githubusercontent.com/u/22881814?s=400&u=89bdda378fc5806a150fcb0d5d6cffaad7b91d33&v=4);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100px;
     border: solid 1px #e6e6e6;
+}
+
+div.menu-top-bar {
+    width: auto;
+    display: flex;
+    text-align: center;
+    margin-left: 70px;
+}
+
+a.button-menu {
+    width: auto;
+    height: 60px;
+    display: flex;
+    margin: 0px 15px;
+    justify-content: center;
+    border-color: #000;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+a.button-menu:hover {
+    height: 57px;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    cursor: pointer;
+}
+
+p.text-menu {
+    width: auto;
+    font-family: 'SegoeUI';
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    margin: auto 0px;
+    color: #000;
+}
+
+@media screen and (max-width: 940px) {
+    p.text-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    div.menu-top-bar {
+        display: none;
+    }
 }

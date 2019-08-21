@@ -17,7 +17,32 @@
                 <div class="header-background"></div>
             </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="header" runat="server">
-                <div class="header"></div>
+                <div class="header">
+                    <a class="header-logo">
+                        <div class="header-logo-image"></div>
+                        <div class="header-logo-name-image"></div>
+                    </a>
+                    <div class="menu-top-bar">
+                        <a class="button-menu">
+                            <img width="25" height="25" src="/images/image-home.svg" style="margin:auto 7px auto 0px;"/>
+                            <p class ="text-menu">Home</p>
+                        </a>
+                        <a class="button-menu">
+                            <img width="25" height="25" src="/images/image-bug.svg" style="margin:auto 7px auto 0px;"/>
+                            <p class ="text-menu">Bug reporting</p>
+                        </a>
+                        <a class="button-menu">
+                            <img width="25" height="25" src="/images/image-github.svg" style="margin:auto 7px auto 0px;"/>
+                            <p class ="text-menu">Shakh Yab on GitHub</p>
+                        </a>
+                        <a class="button-menu">
+                            <img width="23" height="23" src="/images/image-info.svg" style="margin:auto 7px auto 0px;"/>
+                            <p class ="text-menu">About</p>
+                        </a>
+                    </div>
+                    <div style="flex: 1;"></div>
+                    <asp:Button ID="buttonStartShakhyab" CssClass="button-white ripple" runat="server" Text="TRY NOW!" OnClientClick="return false;"/>
+                </div>
             </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="footer" runat="server">
                 <div class="splitter"></div>

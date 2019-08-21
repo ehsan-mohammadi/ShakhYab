@@ -72,14 +72,17 @@
     <Content Include="fonts\SegoeUI-Light.svg" />
     <Content Include="fonts\SegoeUI.svg" />
     <Content Include="images\image-congrats.gif" />
-    <Content Include="images\image-github.svg" />
+    <Content Include="images\image-github.svg">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="images\image-hint.svg" />
     <Content Include="images\image-info.svg" />
     <Content Include="images\image-bug.svg">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="images\image-start.svg" />
-    <Content Include="images\ShakhYab-logo.png" />
+    <Content Include="images\image-home.svg" />
+    <Content Include="images\logo-shakhyab.png" />
     <Content Include="index.aspx" />
     <Content Include="master\WebMaster.Master" />
     <Content Include="fonts\SegoeUI-Bold.eot" />
