@@ -16,6 +16,38 @@
             <asp:ContentPlaceHolder ID="main" runat="server">
                 <div class="header-background"></div>
             </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="footer" runat="server">
+                <div class="splitter"></div>
+                <div class="footer">
+                    <div class="footer-inner" style="width: 400px; display: inline-block;">
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">ABOUT ME</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">README</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">PRIVACY</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">BUG REPORTING</a>
+                    </div>
+                    <div class="footer-inner" style="width: 200px;">
+                        <p class="normal-text" style="color: #7a7a7a;">© 2019 Shakh Yab</p>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="menuBottom" runat="server">
+                <div class="menu-bottom-bar">
+                    <div style="height: 60px; margin: 0px auto; text-align: center; display: flex;">
+                        <a class="button-menu">
+                            <img width="25" height="25" src="/images/image-home.svg" style="margin:auto 7px auto 0px;"/>
+                        </a>
+                        <a class="button-menu">
+                            <img width="25" height="25" src="/images/image-bug.svg" style="margin:auto 7px auto 0px;"/>
+                        </a>
+                        <a class="button-menu">
+                            <img width="25" height="25" src="/images/image-github.svg" style="margin:auto 7px auto 0px;"/>
+                        </a>
+                        <a class="button-menu">
+                            <img width="25" height="25" src="/images/image-info.svg" style="margin:auto 7px auto 0px;"/>
+                        </a>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="header" runat="server">
                 <div class="header">
                     <a class="header-logo">
@@ -42,20 +74,6 @@
                     </div>
                     <div style="flex: 1;"></div>
                     <asp:Button ID="buttonStartShakhyab" CssClass="button-white ripple" runat="server" Text="TRY NOW!" OnClientClick="return false;"/>
-                </div>
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="footer" runat="server">
-                <div class="splitter"></div>
-                <div class="footer">
-                    <div class="footer-inner" style="width: 400px; display: inline-block;">
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">ABOUT ME</a>
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">README</a>
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">PRIVACY</a>
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">BUG REPORTING</a>
-                    </div>
-                    <div class="footer-inner" style="width: 200px;">
-                        <p class="normal-text" style="color: #7a7a7a;">© 2019 Shakh Yab</p>
-                    </div>
                 </div>
             </asp:ContentPlaceHolder>
         </div>

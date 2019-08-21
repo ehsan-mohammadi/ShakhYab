@@ -405,6 +405,18 @@ p.text-menu {
     color: #000;
 }
 
+div.menu-bottom-bar {
+    width: 100%;
+    height: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+    background-color: #ffffff;
+    border-top: solid 1px #e6e6e6;
+}
+
 @media screen and (max-width: 940px) {
     p.text-menu {
         display: none;
@@ -413,6 +425,18 @@ p.text-menu {
 
 @media screen and (max-width: 650px) {
     div.menu-top-bar {
+        display: none;
+    }
+
+    div.menu-bottom-bar {
+        display: flex;
+    }
+
+    div.footer {
+        margin-bottom: 85px;
+    }
+
+    a.button-circle-black {
         display: none;
     }
 }
