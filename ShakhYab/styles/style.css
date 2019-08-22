@@ -214,6 +214,9 @@ span.tooltip:before {
 }
 
 div.container {
+    position: relative;
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
     background: #fff;
     border: 1px solid #e6e6e6;
     width: 450px;
@@ -424,7 +427,7 @@ div.menu-bottom-bar {
 }
 
 @media screen and (max-width: 650px) {
-    div.menu-top-bar {
+    div.menu-top-bar, a.button-circle-black {
         display: none;
     }
 
@@ -436,7 +439,18 @@ div.menu-bottom-bar {
         margin-bottom: 85px;
     }
 
-    a.button-circle-black {
-        display: none;
+    div.title-logo {
+        width: calc(100% - 40px);
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.title-description {
+        width: 100%;
+    }
+
+    div.container {
+        width: calc(100% - 40px);
     }
 }
