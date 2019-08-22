@@ -82,6 +82,7 @@
     </Content>
     <Content Include="images\image-start.svg" />
     <Content Include="images\image-home.svg" />
+    <Content Include="images\logo-confused.png" />
     <Content Include="images\logo-shakhyab.png" />
     <Content Include="index.aspx" />
     <Content Include="master\WebMaster.Master" />
@@ -106,6 +107,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="privacy.aspx" />
     <Content Include="styles\loading.css" />
     <Content Include="styles\style.css" />
     <Content Include="Web.config" />
@@ -128,6 +130,13 @@
     </Compile>
     <Compile Include="master\WebMaster.Master.designer.cs">
       <DependentUpon>WebMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="classes\ShakhYabCore.cs" />
