@@ -31,6 +31,24 @@ namespace ShakhYab.master {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder main;
         
         /// <summary>
+        /// footer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder footer;
+        
+        /// <summary>
+        /// menuBottom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder menuBottom;
+        
+        /// <summary>
         /// header control.
         /// </summary>
         /// <remarks>
@@ -40,12 +58,12 @@ namespace ShakhYab.master {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder header;
         
         /// <summary>
-        /// footer control.
+        /// buttonStartShakhyab control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder footer;
+        protected global::System.Web.UI.WebControls.Button buttonStartShakhyab;
     }
 }
