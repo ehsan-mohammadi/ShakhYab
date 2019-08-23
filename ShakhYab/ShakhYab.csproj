@@ -68,10 +68,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.aspx" />
     <Content Include="fonts\SegoeUI-Bold.svg" />
     <Content Include="fonts\SegoeUI-Light.svg" />
     <Content Include="fonts\SegoeUI.svg" />
     <Content Include="images\image-congrats.gif" />
+    <Content Include="images\image-email.svg" />
     <Content Include="images\image-github.svg">
       <SubType>Designer</SubType>
     </Content>
@@ -80,8 +82,10 @@
     <Content Include="images\image-bug.svg">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="images\image-linkedin.svg" />
     <Content Include="images\image-start.svg" />
     <Content Include="images\image-home.svg" />
+    <Content Include="images\image-twitter.svg" />
     <Content Include="images\logo-confused.png" />
     <Content Include="images\logo-shakhyab.png" />
     <Content Include="index.aspx" />
@@ -113,6 +117,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
     <Compile Include="classes\LoggedInUser.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

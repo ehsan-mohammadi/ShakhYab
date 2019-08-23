@@ -5,15 +5,15 @@
         <div class="title-logo">
             <div class="title-logo-image"></div>
             <div style="margin-top: 20px;">
-                <a class="button-circle-black ripple" href="https://github.com/ehsan-mohammadi/ShakhYab" target="_blank">
+                <a class="button-circle-white ripple" href="https://github.com/ehsan-mohammadi/ShakhYab" target="_blank">
                     <img width="30" height="30" src="/images/image-github.svg" style="vertical-align: top; margin-top:8px;"/>
                     <span class="tooltip">Shakh Yab on GitHub</span>
                 </a>
-                <a class="button-circle-black ripple" href="https://github.com/ehsan-mohammadi/ShakhYab/issues" target="_blank">
+                <a class="button-circle-white ripple" href="https://github.com/ehsan-mohammadi/ShakhYab/issues" target="_blank">
                     <img width="30" height="30" src="/images/image-bug.svg" style="vertical-align: top; margin-top:8px;"/>
                     <span class="tooltip">Bug reporting</span>
                 </a>
-                <a class="button-circle-black ripple">
+                <a class="button-circle-white ripple">
                     <img width="28" height="28" src="/images/image-info.svg" style="vertical-align: top; margin-top:9px;"/>
                     <span class="tooltip">About</span>
                 </a>

@@ -160,7 +160,7 @@ h2.sub-title {
   transition: background 0s;
 }
 
-a.button-circle-black {
+a.button-circle-white {
     display: inline-block;
     position: relative;
     margin: 5px;
@@ -178,7 +178,7 @@ a.button-circle-black {
 }
 
 
-a.button-circle-black:hover span {
+a.button-circle-white:hover span {
   bottom: 55px;
   visibility: visible;
   opacity: 1;
@@ -420,6 +420,10 @@ div.menu-bottom-bar {
     border-top: solid 1px #e6e6e6;
 }
 
+a.stay {
+    display: inline-block !important;
+}
+
 @media screen and (max-width: 940px) {
     p.text-menu {
         display: none;
@@ -427,7 +431,7 @@ div.menu-bottom-bar {
 }
 
 @media screen and (max-width: 650px) {
-    div.menu-top-bar, a.button-circle-black {
+    div.menu-top-bar, a.button-circle-white {
         display: none;
     }
 
