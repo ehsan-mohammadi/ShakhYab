@@ -13,7 +13,7 @@
                     <img width="30" height="30" src="/images/image-bug.svg" style="vertical-align: top; margin-top:8px;"/>
                     <span class="tooltip">Bug reporting</span>
                 </a>
-                <a class="button-circle-white ripple">
+                <a class="button-circle-white ripple" href="../about.aspx">
                     <img width="28" height="28" src="/images/image-info.svg" style="vertical-align: top; margin-top:9px;"/>
                     <span class="tooltip">About</span>
                 </a>
@@ -31,7 +31,7 @@
         <asp:ScriptManager ID="scriptManager" runat="server"></asp:ScriptManager>
         <asp:UpdatePanel ID="updatePanelIndex" runat="server" UpdateMode="Conditional">
             <ContentTemplate>
-                 <div id="divLogin" class="container" style="margin-top: 50px;" runat="server">
+                 <div id="divLogin" class="container" style="margin-top: 50px; max-height: calc(100vh - 150px); overflow-y: auto;" runat="server">
                     <h1 class="title" style="text-align: center; margin-bottom: 20px;">Try Shakh Yab!</h1>
                     <p class="normal-text" style="margin-bottom: 10px;">Instagram Username:</p>
                     <asp:TextBox ID="textBoxUsername" CssClass="text-box" runat="server"></asp:TextBox>
@@ -44,7 +44,7 @@
                     </div>
                     <div style="display: flex; margin: 0px 40px;">
                         <img width="25" height="25" src="/images/image-hint.svg"/>
-                        <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">Don't trust me? <a class="hyper-link">Click here</a></p>
+                        <p class="normal-text" style="width:auto; padding: 2px 0px 0px 5px; color: #7a7a7a;">Don't trust me? <a class="hyper-link" href="../privacy.aspx">Click here</a></p>
                         <p style="flex: 1;"></p>
                     </div>
                     <p id="errorMessage" class="normal-text" style="margin: 15px 0px; text-align:center; color:red;" runat="server"></p>
@@ -54,7 +54,7 @@
                     </div>
                     <p class="normal-text" style="margin-bottom: 30px;"></p>
                 </div>
-                <div id="divUser" class="container" style="width: 800px; margin-top: 50px; display: none;" runat="server">
+                <div id="divUser" class="container shakh-users" style="margin-top: 50px; display: none;" runat="server">
                     <div id="divProfileImage" class="login-profile-image" runat="server"></div>
                     <p id="textWelcome" class="normal-title" style="text-align: center; margin-bottom: 0px; font-family:'SegoeUI-Light'; font-weight:lighter;" runat="server">Welcome User!</p>
                     <p id="textUsername" class="normal-title" style="text-align: center; font-size: 17pt; color: #7a7a7a; margin-bottom: 20px;" runat="server">username</p>

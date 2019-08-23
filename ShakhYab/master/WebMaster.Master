@@ -20,12 +20,12 @@
                 <div class="splitter"></div>
                 <div class="footer">
                     <div class="footer-inner" style="width: 400px; display: inline-block;">
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">ABOUT ME</a>
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">README</a>
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">PRIVACY</a>
-                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;">BUG REPORTING</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;" href="../about.aspx">ABOUT ME</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;" href="https://github.com/ehsan-mohammadi/ShakhYab" target="_blank">README</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;" href="../privacy.aspx">PRIVACY</a>
+                        <a class="hyper-link" style="font-weight:bold; font-size: 10pt; padding: 0px 10px;" href="https://github.com/ehsan-mohammadi/ShakhYab/issues" target="_blank">BUG REPORTING</a>
                     </div>
-                    <div class="footer-inner" style="width: 200px;">
+                    <div class="footer-inner" style="width: 210px;">
                         <p class="normal-text" style="color: #7a7a7a;">© 2019 Shakh Yab</p>
                     </div>
                 </div>
@@ -33,16 +33,16 @@
             <asp:ContentPlaceHolder ID="menuBottom" runat="server">
                 <div class="menu-bottom-bar">
                     <div style="height: 60px; margin: 0px auto; text-align: center; display: flex;">
-                        <a class="button-menu">
+                        <a class="button-menu" href="../index.aspx">
                             <img width="25" height="25" src="/images/image-home.svg" style="margin:auto 7px auto 0px;"/>
                         </a>
-                        <a class="button-menu">
+                        <a class="button-menu" href="https://github.com/ehsan-mohammadi/ShakhYab/issues" target="_blank">
                             <img width="25" height="25" src="/images/image-bug.svg" style="margin:auto 7px auto 0px;"/>
                         </a>
-                        <a class="button-menu">
+                        <a class="button-menu" href="https://github.com/ehsan-mohammadi/ShakhYab" target="_blank">
                             <img width="25" height="25" src="/images/image-github.svg" style="margin:auto 7px auto 0px;"/>
                         </a>
-                        <a class="button-menu">
+                        <a class="button-menu" href="../about.aspx">
                             <img width="25" height="25" src="/images/image-info.svg" style="margin:auto 7px auto 0px;"/>
                         </a>
                     </div>
@@ -50,24 +50,24 @@
             </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="header" runat="server">
                 <div class="header">
-                    <a class="header-logo">
+                    <a class="header-logo" href="../index.aspx">
                         <div class="header-logo-image"></div>
                         <div class="header-logo-name-image"></div>
                     </a>
                     <div class="menu-top-bar">
-                        <a class="button-menu">
+                        <a class="button-menu" href="../index.aspx">
                             <img width="25" height="25" src="/images/image-home.svg" style="margin:auto 7px auto 0px;"/>
                             <p class ="text-menu">Home</p>
                         </a>
-                        <a class="button-menu">
+                        <a class="button-menu" href="https://github.com/ehsan-mohammadi/ShakhYab/issues" target="_blank">
                             <img width="25" height="25" src="/images/image-bug.svg" style="margin:auto 7px auto 0px;"/>
                             <p class ="text-menu">Bug reporting</p>
                         </a>
-                        <a class="button-menu">
+                        <a class="button-menu" href="https://github.com/ehsan-mohammadi/ShakhYab" target="_blank">
                             <img width="25" height="25" src="/images/image-github.svg" style="margin:auto 7px auto 0px;"/>
                             <p class ="text-menu">Shakh Yab on GitHub</p>
                         </a>
-                        <a class="button-menu">
+                        <a class="button-menu" href="../about.aspx">
                             <img width="23" height="23" src="/images/image-info.svg" style="margin:auto 7px auto 0px;"/>
                             <p class ="text-menu">About</p>
                         </a>
