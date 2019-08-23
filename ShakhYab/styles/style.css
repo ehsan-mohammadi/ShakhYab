@@ -215,12 +215,14 @@ span.tooltip:before {
 
 div.container {
     position: relative;
-    max-height: calc(100vh - 150px);
-    overflow-y: auto;
     background: #fff;
     border: 1px solid #e6e6e6;
     width: 450px;
     margin: auto;
+}
+
+div.shakh-users {
+    width: 800px;
 }
 
 p.normal-text {
@@ -300,6 +302,7 @@ a.hyper-link {
     font-size: 11pt;
     font-weight: normal;
     color: #000;
+    text-decoration: none;
     text-align: left;
     margin: 0;
 }
@@ -386,6 +389,7 @@ a.button-menu {
     margin: 0px 15px;
     justify-content: center;
     border-color: #000;
+    text-decoration: none !important;
     -webkit-transition: .3s;
     -moz-transition: .3s;
     transition: .3s;
@@ -427,6 +431,12 @@ a.stay {
 @media screen and (max-width: 940px) {
     p.text-menu {
         display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    div.shakh-users {
+        width: calc(100% - 40px);
     }
 }
 

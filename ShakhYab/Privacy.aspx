@@ -7,11 +7,11 @@
         </div>
         <div class="title-description">
             <h1 class="title">Don't trust me?</h1>
-            <h2 class="sub-title">Sometimes, you may follow someone on Instagram, but he doesn't follow you back. Or might he follow you back and after that, he unfollow you.
-                <br />In Iran, we call these people "شاخ" (Say: Shakh)!
-                <br />Absolutely, it's hard and boring to looking for these people by comparing follower and following list.
-                <br /><span style="font-family:'SegoeUI-bold'; font-weight:bold">Shakh Yab</span> is a simple, free and open-source Instagram manager tool that find out users who don't follow you back on Instagram. With Shakh Yab you can easily find a list of all users who do not follow your account on Instagram but whom you follow.
-                <br />So, if you are asking yourself "Who unfollowed me on Instagram?", just start using Shakh Yab to find out who unfollowed you.
+            <h2 class="sub-title">You may ask yourself "How do I trust Shakh Yab? I'm scared that it can stolen my data."
+                <br />Yes, you have a right to be scared! But I describe something and hope you can trust me.
+                <br />First of all, the source of the Shakh Yab is available on GitHub (You can click <a class="hyper-link" style="font-size: 13pt; font-weight: bold;" href="https://github.com/ehsan-mohammadi/ShakhYab">here</a> to see the source code). I never try to save your information!
+                <br />Second, if you still don't trust me, you can download the source code of Shakh Yab and run it on your local system (For more information about how to run Shakh Yab locally, please read <a class="hyper-link" style="font-size: 13pt; font-weight: bold;" href="https://github.com/ehsan-mohammadi/ShakhYab">README</a> carefully).
+                <br />This is just a funny project. I don't need your personal data and never try to collect them! Hope you enjoy Shakh Yab!
             </h2>
         </div>
     </div>

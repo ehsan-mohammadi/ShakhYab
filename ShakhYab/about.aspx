@@ -4,19 +4,19 @@
         <div class="title-logo">
             <div class="title-logo-image" style="width: 150px; height: 150px; border: 1px solid #e6e6e6; border-radius: 100%;  background-image: url(https://avatars1.githubusercontent.com/u/22881814?s=460&v=4)"></div>
             <div style="margin-top: 20px;">
-                <a class="button-circle-white ripple stay" href="https://github.com/ehsan-mohammadi/ShakhYab" target="_blank">
+                <a class="button-circle-white ripple stay" href="mailto:mohammadi.ehsan1994@gmail.com" target="_blank">
                     <img width="26" height="26" src="/images/image-email.svg" style="vertical-align: top; margin-top:10px;"/>
                     <span class="tooltip">Email</span>
                 </a>
-                <a class="button-circle-white ripple stay" href="https://github.com/ehsan-mohammadi/ShakhYab/issues" target="_blank">
+                <a class="button-circle-white ripple stay" href="https://github.com/ehsan-mohammadi" target="_blank">
                     <img width="30" height="30" src="/images/image-github.svg" style="vertical-align: top; margin-top:8px;"/>
                     <span class="tooltip">GitHub</span>
                 </a>
-                <a class="button-circle-white ripple stay">
+                <a class="button-circle-white ripple stay" href="https://twitter.com/EhsanMhdi" target="_blank">
                     <img width="28" height="28" src="/images/image-twitter.svg" style="vertical-align: top; margin-top:9px;"/>
                     <span class="tooltip">Twitter</span>
                 </a>
-                <a class="button-circle-white ripple stay">
+                <a class="button-circle-white ripple stay" href="https://www.linkedin.com/in/ehsan-mohammadi/" target="_blank">
                     <img width="27" height="27" src="/images/image-linkedin.svg" style="vertical-align: top; margin-top:8px;"/>
                     <span class="tooltip">Linkedin</span>
                 </a>
