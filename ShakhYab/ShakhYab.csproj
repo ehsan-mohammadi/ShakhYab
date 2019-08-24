@@ -163,7 +163,8 @@
     <Compile Include="classes\ShakhYabCore.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="scripts\actions.ts" />
+    <TypeScriptCompile Include="scripts\url-input-actions.ts" />
+    <TypeScriptCompile Include="scripts\try-button-actions.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

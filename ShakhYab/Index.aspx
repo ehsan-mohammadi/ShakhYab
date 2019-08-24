@@ -1,6 +1,6 @@
 ﻿<%@ Page Async="true" Title="" Language="C#" MasterPageFile="~/master/WebMaster.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="ShakhYab.Index" %>
 <asp:Content ID="mainContent" ContentPlaceHolderID="main" runat="server">
-    <script type="text/javascript" src="scripts/actions.js"></script>
+    <script type="text/javascript" src="scripts/url-input-actions.js"></script>
     <div class="title-side-by-side">
         <div class="title-logo">
             <div class="title-logo-image"></div>
