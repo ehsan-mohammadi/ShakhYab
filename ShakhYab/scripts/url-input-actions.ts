@@ -1,4 +1,29 @@
-﻿// This TypeScript file, used for client side actions
+﻿// This TypeScript file, used for client side URL and input actions
+
+// Check URL to know you clicked on the buttonTryNow or not
+window.onload = function () {
+    // Get the URL
+    let url: string = window.location.href;
+
+    // Split it
+    let splitUrl: string[] = url.split('#');
+
+    if (splitUrl.length > 1) {
+        // Get the state
+        let state: string = splitUrl[1];
+
+        if (state == "login") {
+            const divLogin: HTMLDivElement = document.querySelector("#main_divLogin") as HTMLDivElement;
+
+            let divLoginIsShow: boolean = divLogin != null && divLogin.style.display != "none";
+
+            if (divLoginIsShow) {
+                // Scroll to the divLogin
+                divLogin.scrollIntoView();
+            }
+        }
+    }
+}
 
 // When you click on buttonStart
 function buttonStart_Click() {

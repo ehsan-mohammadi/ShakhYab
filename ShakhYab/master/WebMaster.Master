@@ -10,6 +10,7 @@
     <link rel="icon" href="../images/icon-shakhyab.ico" type="image/ico" />
     <link href="../styles/loading.css" rel="stylesheet" />
     <link href="../styles/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="scripts/try-button-actions.js"></script>
 </head>
 <body>
     <form id="masterForm" runat="server">
@@ -74,7 +75,7 @@
                         </a>
                     </div>
                     <div style="flex: 1;"></div>
-                    <asp:Button ID="buttonStartShakhyab" CssClass="button-white ripple" runat="server" Text="TRY NOW!" OnClientClick="return false;"/>
+                    <asp:Button ID="buttonTryNow" CssClass="button-white ripple" runat="server" Text="TRY NOW!" OnClientClick="return buttonTryNow_Click()"/>
                 </div>
             </asp:ContentPlaceHolder>
         </div>
