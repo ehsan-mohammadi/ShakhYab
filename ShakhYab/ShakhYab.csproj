@@ -69,12 +69,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
+    <Content Include="error.aspx" />
     <Content Include="fonts\SegoeUI-Bold.svg" />
     <Content Include="fonts\SegoeUI-Light.svg" />
     <Content Include="fonts\SegoeUI.svg" />
     <Content Include="images\icon-shakhyab.ico" />
     <Content Include="images\image-congrats.gif" />
     <Content Include="images\image-email.svg" />
+    <Content Include="images\image-error.png" />
     <Content Include="images\image-github.svg">
       <SubType>Designer</SubType>
     </Content>
@@ -126,6 +128,13 @@
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
     <Compile Include="classes\LoggedInUser.cs" />
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

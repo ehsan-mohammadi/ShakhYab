@@ -424,6 +424,16 @@ div.menu-bottom-bar {
     border-top: solid 1px #e6e6e6;
 }
 
+div.error-image {
+    background-image: url(../images/image-error.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 326px;
+    margin: 20px auto auto auto;
+}
+
 a.stay {
     display: inline-block !important;
 }
